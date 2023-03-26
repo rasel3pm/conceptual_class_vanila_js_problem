@@ -156,3 +156,18 @@ var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var max = findMax(ar);
 console.log("Max: ", max);
 //jodi argument ar value max value ar boro hoy tahola max value hobe arr[i]
+
+// Coding challenge #14: Print the first 10 Fibonacci numbers without recursion
+var f0 = 0;
+console.log(f0);
+
+var f1 = 1;
+console.log(f1);
+
+for (var i = 2; i < 10; i++) {
+  var fi = f1 + f0;
+  console.log(fi);
+
+  f0 = f1;
+  f1 = fi;
+}
